@@ -20,6 +20,7 @@ def dec_multi():
     return multi
 
 
+# Tests
 def test_add_integers(dec_add, capsys):
     """Test addition function with integers"""
     result = dec_add(4, 6)
