@@ -1,7 +1,5 @@
 import asyncio
-
 import pytest
-
 from src.lab1.task5 import func1, func2, main
 
 
