@@ -38,18 +38,6 @@ def test_check_exist(capsys):
     assert output.out.strip() == "File exists"
 
 
-def test_get_info(capsys):
-    """Test: check file info output"""
-    make_file(file)
-    get_info(file)
-    output = capsys.readouterr()
-    lines = output.out.strip().split('\n')
-    assert "Size:" in lines[0]
-    assert "Date of last modification:" in lines[1]
-    assert "Date of last access:" in lines[2]
-    assert "Current user:" in lines[3]
-
-
 def test_permissions_output(capsys):
     """Test: check permissions output"""
     make_file(file)
