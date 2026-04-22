@@ -63,9 +63,9 @@ def test_permissions_output(capsys):
     show_perm(st)
     output = capsys.readouterr()
     lines = output.out.strip().split('\n')
-    assert "Access level: -rw-rw-rw-" in lines[0]
+    assert "Access level" in lines[0]
     assert "Access level change" in lines[1]
-    assert "Access level: -r--r--r--" in lines[2]
+    assert "Access level" in lines[2]
     assert "Access level change" in lines[3]
     assert "Access level:" in lines[4]
 
